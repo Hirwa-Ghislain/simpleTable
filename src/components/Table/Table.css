@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tableContainer {
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(30, 143, 255, 0.425);
+}
+
+table {
+  padding: 1.5%;
+  width: 100%;
+  border-radius: 26px;
+}
+
+.tableContainer td {
+  height: 20px !important;
+}
+
+thead {
+  padding-bottom: 20%;
+  background: rgba(30, 143, 255, 0);
+}
+
+tr {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 51px;
+  color: white;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td {
+  border-collapse: collapse;
+  padding: 8px;
+  border-bottom: 40px solid rgba(30, 143, 255, 0.425);
+  background: rgba(30, 143, 255, 0.425);
+}
+
+#customers td:nth-child(1) {
+  border-radius: 20px 0 0 20px;
+}
+
+#customers td:last-child {
+  border-radius: 0 20px 20px 0;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .tableContainer {
+    padding: 10px;
+  }
+  
+  table {
+    padding: 1%;
+  }
+  
+  tr {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  #customers th,
+  #customers td {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tableContainer {
+    padding: 5px;
+  }
+  
+  table {
+    padding: 0.5%;
+  }
+  
+  tr {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  #customers th,
+  #customers td {
+    padding: 4px;
+  }
+}

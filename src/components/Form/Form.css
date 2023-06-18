@@ -1,0 +1,168 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+}
+.login {
+  position: relative;
+  top: -20vh;
+  margin: 0 40%;
+  width: 40vw;
+  height: 60vh;
+  background: #ffffff;
+  opacity: 0.7;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 24px;
+}
+.blur {
+  width: 10vw;
+  height: 15vh;
+  justify-content: 20vh;
+  background: #ffffff;
+  opacity: 0.2;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 24px;
+}
+.one {
+  position: relative;
+  top: 25vh;
+  right: -25vh;
+}
+.two {
+  height: 20vh;
+  position: relative;
+  top: 5vh;
+  right: -100vh;
+}
+.three {
+  position: relative;
+  top: 45vh;
+  right: -100vh;
+}
+form {
+  height: 100%;
+  width: 100%;
+  background: rgb(145, 199, 253);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5vh;
+}
+h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+
+  color: #ffffff;
+}
+form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1vh;
+}
+label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.input {
+    background-color: rgb(145, 199, 253);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  width: 20vw !important;
+  border:none;
+  height: 5vh !important;
+  border-radius: 0;
+  border-bottom: 2px solid white;
+}
+button {
+  border: none;
+  width: 10vw;
+  margin-top: 5vh;
+  height: 5vh;
+  background: #ffffff00;
+  /* opacity: 0.2; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 36px;
+}
+form > div:last-child {
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 8vh;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    
+    .login {
+      margin: 0 5%;
+      width: 90vw;
+    }
+    
+    .input {
+      width: 90%;
+    }
+    
+    button {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login {
+      margin: 2%;
+      width: 96vw;
+      height: auto;
+      top: -10vh;
+    }
+    
+    .blur {
+      display: none;
+    }
+    
+    .one,
+    .two,
+    .three {
+      display: none;
+    }
+    
+    h2 {
+      font-size: 28px;
+      line-height: 42px;
+    }
+    
+    label,
+    input,
+    button {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  
